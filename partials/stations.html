@@ -1,0 +1,14 @@
+<a ui-sref="newStation" class="btn-primary btn-lg nodecoration">Add New Station</a>
+<table class="table movietable">
+    <tr>
+        <td><h3>All Station</h3></td>
+        <td></td>
+    </tr>
+    <tr ng-repeat="station in stations.station">
+        <td>{{station.station}}</td>
+        <td>
+            <a class="btn btn-primary" ui-sref="viewStation({id:station.id})">View</a>
+            <a class="btn btn-danger"  ng-click="deleteStation({id:station.id})">Delete</a>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,25 @@
+<table class="table stationtable">
+    <tr>
+        <td><h3>Details for {{station.station}}</h3></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Id</td>
+        <td>{{station.id}}</td>
+    </tr>
+    <tr>
+        <td>Station</td>
+        <td>{{station.station}}</td>
+    </tr>
+    <tr>
+        <td>Latitude</td>
+        <td>{{station.latitude}}</td>
+    </tr>
+    <tr>
+        <td>Longitude</td>
+        <td>{{station.longitude}}</td>
+    </tr>
+</table>
+<div>
+    <a class="btn btn-primary" ui-sref="editStation({id:station.id})">Edit</a>
+</div>

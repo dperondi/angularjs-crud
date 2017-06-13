@@ -1,0 +1,18 @@
+<select class="form-control"
+    ng-model="stationSelected" 
+    ng-options="station.station for station in stationOption.station"
+    ng-change="changeStation(station)">
+</select>
+<br/>
+<table class="table friend">
+    <tr>
+        <th><a href="javascript:;">Datetime</a></th>
+        <th><a href="javascript:;">Temp</a></th>
+        <th><a href="javascript:;">Rain</a></th>
+    </tr>
+    <tr ng-repeat="wt in weather.weather">
+        <td>{{wt.datetime}}</td>
+        <td>{{wt.temp}}</td>
+        <td>{{wt.rain}}</td>
+    </tr>
+</table>
